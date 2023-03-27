@@ -1,0 +1,62 @@
+.feed-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(239, 234, 234);
+    box-shadow: 10px 10px;
+    padding: .2rem;
+}
+
+.nav-icons-conatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icons {
+    color: black;
+    margin: .5rem;
+}
+
+.upload-btn {
+    margin-top: 1rem;
+}
+
+.video-container {
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.video-container::-webkit-scrollbar {
+    display: none;
+}
+
+.post-container {
+    height: 100%;
+    width: 20rem;
+    border-radius: 15px;
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
+}
+
+.post-container>video {
+    height: 100%;
+    width: 20rem;
+    background-color: pink;
+    border-radius: 15px;
+    /* it will tell the coming object fit in it */
+    object-fit: contain;
+}
+
+@media screen and (max-width:500px){
+    .nav-icons {
+        display: none;
+    }
+}
